@@ -16,11 +16,11 @@
               "question": "0+1?",
               "options": [
                           "2",
-                          "1",
+                          "7",
                           "3",
-                          "4"
+                          "1"
                           ],
-              "correctAns": 2
+              "correctAns": 4
               },
               {
               "question": "10-5?",
@@ -30,7 +30,7 @@
                           "3",
                           "4"
                           ],
-              "correctAns": 2
+              "correctAns": 1
               }
               ]
  

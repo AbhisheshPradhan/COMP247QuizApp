@@ -45,7 +45,7 @@ class ChooseTopicsViewController: UIViewController, UITableViewDelegate, UITable
             destination.topic = topicList[(tableView.indexPathForSelectedRow?.row)!]
             let cell = sender as? UITableViewCell
             destination.navigationItem.title = cell?.textLabel?.text
-            print("\(String(describing: cell?.textLabel?.text))")
+       //     print("\(String(describing: cell?.textLabel?.text))")
         }
     }
     

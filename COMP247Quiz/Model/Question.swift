@@ -14,9 +14,9 @@ struct Question: Decodable, Hashable
 
     public var question : String
     public let options : [String]
-    private let correctAns : Int
-    public  var userAns: Int?
-    var answered : Bool?
+    public let correctAns : Int
+//    public  var userAns: Int?
+ //   var answered : Bool?
     
     func isCorrect(_ userAns:Int) -> Bool{
         if userAns == correctAns{
