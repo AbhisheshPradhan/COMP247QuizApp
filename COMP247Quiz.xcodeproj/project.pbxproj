@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		722064E72074BA4E00C32AFE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722064E62074BA4E00C32AFE /* Question.swift */; };
+		722064EE2074D2C100C32AFE /* questionBank.json in Resources */ = {isa = PBXBuildFile; fileRef = 722064ED2074D2C100C32AFE /* questionBank.json */; };
+		722064F02074EED900C32AFE /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722064EF2074EED900C32AFE /* QuizViewController.swift */; };
+		722064F920751FF000C32AFE /* ChooseTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722064F820751FF000C32AFE /* ChooseTopicsViewController.swift */; };
 		72A55D33206FDAA000745AAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A55D32206FDAA000745AAA /* AppDelegate.swift */; };
-		72A55D35206FDAA000745AAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A55D34206FDAA000745AAA /* ViewController.swift */; };
+		72A55D35206FDAA000745AAA /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A55D34206FDAA000745AAA /* StartScreenViewController.swift */; };
 		72A55D38206FDAA000745AAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A55D36206FDAA000745AAA /* Main.storyboard */; };
 		72A55D3A206FDAA000745AAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A55D39206FDAA000745AAA /* Assets.xcassets */; };
 		72A55D3D206FDAA000745AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A55D3B206FDAA000745AAA /* LaunchScreen.storyboard */; };
+		72A55D45206FDC6400745AAA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A55D44206FDC6400745AAA /* Colors.swift */; };
+		72B608FF20762AAD00EF3ECB /* QuizSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B608FE20762AAD00EF3ECB /* QuizSummaryViewController.swift */; };
+		72E8FC66206FDCC60011D881 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E8FC65206FDCC60011D881 /* UIViewExtension.swift */; };
+		72EC0AF620753852004A3377 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC0AF520753852004A3377 /* Topic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		722064E62074BA4E00C32AFE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		722064ED2074D2C100C32AFE /* questionBank.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questionBank.json; sourceTree = "<group>"; };
+		722064EF2074EED900C32AFE /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		722064F820751FF000C32AFE /* ChooseTopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTopicsViewController.swift; sourceTree = "<group>"; };
 		72A55D2F206FDAA000745AAA /* COMP247Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COMP247Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A55D32206FDAA000745AAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72A55D34206FDAA000745AAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72A55D34206FDAA000745AAA /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		72A55D37206FDAA000745AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72A55D39206FDAA000745AAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72A55D3C206FDAA000745AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72A55D3E206FDAA000745AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72A55D44206FDC6400745AAA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		72B608FE20762AAD00EF3ECB /* QuizSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSummaryViewController.swift; sourceTree = "<group>"; };
+		72E8FC65206FDCC60011D881 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		72EC0AF520753852004A3377 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +51,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		722064EA2074C6CB00C32AFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				722064E62074BA4E00C32AFE /* Question.swift */,
+				72EC0AF520753852004A3377 /* Topic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		722064EB2074C6D400C32AFE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				72A55D34206FDAA000745AAA /* StartScreenViewController.swift */,
+				722064F820751FF000C32AFE /* ChooseTopicsViewController.swift */,
+				722064EF2074EED900C32AFE /* QuizViewController.swift */,
+				72B608FE20762AAD00EF3ECB /* QuizSummaryViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		722064EC2074C6E600C32AFE /* Extensions + Extras */ = {
+			isa = PBXGroup;
+			children = (
+				72A55D44206FDC6400745AAA /* Colors.swift */,
+				72E8FC65206FDCC60011D881 /* UIViewExtension.swift */,
+			);
+			path = "Extensions + Extras";
+			sourceTree = "<group>";
+		};
+		722064F32075175100C32AFE /* JSON files */ = {
+			isa = PBXGroup;
+			children = (
+				722064ED2074D2C100C32AFE /* questionBank.json */,
+			);
+			path = "JSON files";
+			sourceTree = "<group>";
+		};
 		72A55D26206FDAA000745AAA = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +107,25 @@
 		72A55D31206FDAA000745AAA /* COMP247Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				72A55D32206FDAA000745AAA /* AppDelegate.swift */,
-				72A55D34206FDAA000745AAA /* ViewController.swift */,
+				722064EB2074C6D400C32AFE /* View Controllers */,
+				722064EA2074C6CB00C32AFE /* Model */,
+				722064F32075175100C32AFE /* JSON files */,
+				722064EC2074C6E600C32AFE /* Extensions + Extras */,
+				72E8FC69206FE0BB0011D881 /* Supporting Files */,
 				72A55D36206FDAA000745AAA /* Main.storyboard */,
-				72A55D39206FDAA000745AAA /* Assets.xcassets */,
-				72A55D3B206FDAA000745AAA /* LaunchScreen.storyboard */,
 				72A55D3E206FDAA000745AAA /* Info.plist */,
 			);
 			path = COMP247Quiz;
+			sourceTree = "<group>";
+		};
+		72E8FC69206FE0BB0011D881 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72A55D32206FDAA000745AAA /* AppDelegate.swift */,
+				72A55D39206FDAA000745AAA /* Assets.xcassets */,
+				72A55D3B206FDAA000745AAA /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,7 +155,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Abhishesh Pradhan";
 				TargetAttributes = {
 					72A55D2E206FDAA000745AAA = {
@@ -124,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72A55D3D206FDAA000745AAA /* LaunchScreen.storyboard in Resources */,
+				722064EE2074D2C100C32AFE /* questionBank.json in Resources */,
 				72A55D3A206FDAA000745AAA /* Assets.xcassets in Resources */,
 				72A55D38206FDAA000745AAA /* Main.storyboard in Resources */,
 			);
@@ -136,8 +201,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A55D35206FDAA000745AAA /* ViewController.swift in Sources */,
+				72A55D35206FDAA000745AAA /* StartScreenViewController.swift in Sources */,
+				72A55D45206FDC6400745AAA /* Colors.swift in Sources */,
+				722064F02074EED900C32AFE /* QuizViewController.swift in Sources */,
+				72E8FC66206FDCC60011D881 /* UIViewExtension.swift in Sources */,
+				722064F920751FF000C32AFE /* ChooseTopicsViewController.swift in Sources */,
+				72EC0AF620753852004A3377 /* Topic.swift in Sources */,
+				722064E72074BA4E00C32AFE /* Question.swift in Sources */,
 				72A55D33206FDAA000745AAA /* AppDelegate.swift in Sources */,
+				72B608FF20762AAD00EF3ECB /* QuizSummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +249,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -184,6 +257,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -234,6 +308,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -241,6 +316,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
