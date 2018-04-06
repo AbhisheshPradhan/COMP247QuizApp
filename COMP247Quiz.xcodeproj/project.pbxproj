@@ -18,6 +18,7 @@
 		72A55D3D206FDAA000745AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A55D3B206FDAA000745AAA /* LaunchScreen.storyboard */; };
 		72A55D45206FDC6400745AAA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A55D44206FDC6400745AAA /* Colors.swift */; };
 		72B608FF20762AAD00EF3ECB /* QuizSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B608FE20762AAD00EF3ECB /* QuizSummaryViewController.swift */; };
+		72C17E982077DBC900E8E35A /* Planned UI.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C17E972077DBC900E8E35A /* Planned UI.png */; };
 		72E8FC66206FDCC60011D881 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E8FC65206FDCC60011D881 /* UIViewExtension.swift */; };
 		72EC0AF620753852004A3377 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC0AF520753852004A3377 /* Topic.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		72A55D3E206FDAA000745AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A55D44206FDC6400745AAA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		72B608FE20762AAD00EF3ECB /* QuizSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSummaryViewController.swift; sourceTree = "<group>"; };
+		72C17E972077DBC900E8E35A /* Planned UI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Planned UI.png"; path = "../../../Desktop/Planned UI.png"; sourceTree = "<group>"; };
 		72E8FC65206FDCC60011D881 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		72EC0AF520753852004A3377 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 		72A55D31206FDAA000745AAA /* COMP247Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				72C17E972077DBC900E8E35A /* Planned UI.png */,
 				722064EB2074C6D400C32AFE /* View Controllers */,
 				722064EA2074C6CB00C32AFE /* Model */,
 				722064F32075175100C32AFE /* JSON files */,
@@ -191,6 +194,7 @@
 				722064EE2074D2C100C32AFE /* questionBank.json in Resources */,
 				72A55D3A206FDAA000745AAA /* Assets.xcassets in Resources */,
 				72A55D38206FDAA000745AAA /* Main.storyboard in Resources */,
+				72C17E982077DBC900E8E35A /* Planned UI.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
