@@ -36,6 +36,10 @@ class ChooseTopicsViewController: UIViewController, UITableViewDelegate, UITable
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showQuestion", sender: self)
     }
@@ -69,7 +73,5 @@ class ChooseTopicsViewController: UIViewController, UITableViewDelegate, UITable
 
     private func setupUI(){
         view.setGradientBackground(colorOne: Colors.gradientColor1, colorTwo: Colors.gradientColor2)
-        //  beginButton.layer.cornerRadius = beginButton.frame.size.height / 5
-        //beginButton.setTitle("", for: .normal)
     }
 }
