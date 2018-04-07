@@ -21,7 +21,12 @@ class QuizViewController: UIViewController
     
     
     // MARK: OUTLETS
-    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var questionLabel: UILabel!{
+        didSet{
+            questionLabel.layer.cornerRadius = questionLabel.frame.size.height / 5
+            questionLabel.layer.masksToBounds = true
+        }
+    }
     @IBOutlet var optionButtons: [UIButton]!
     
     // MARK: ACTIONS (Buttons)
@@ -122,23 +127,14 @@ class QuizViewController: UIViewController
             buttons.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             buttons.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
             //  questionLabel.layer.cornerRadius = questionLabel.frame.height / 5
-            questionLabel.layer.cornerRadius = questionLabel.frame.size.height / 5
-            questionLabel.layer.masksToBounds = true
+         
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? QuizSummaryViewController{
             destination.score = score
+            destination.topic = topic
         }
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let destination = segue.destination as? QuizViewController{
-//            destination.topic = topicList[(tableView.indexPathForSelectedRow?.row)!]
-//            let cell = sender as? UITableViewCell
-//            destination.navigationItem.title = cell?.textLabel?.text
-//            //     print("\(String(describing: cell?.textLabel?.text))")
-//        }
-//    }
 }

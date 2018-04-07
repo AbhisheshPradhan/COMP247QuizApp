@@ -23,7 +23,7 @@ class StartScreenViewController: UIViewController {
         view.setGradientBackground(colorOne: Colors.gradientColor1, colorTwo: Colors.gradientColor2)
         beginButton.layer.cornerRadius = beginButton.frame.size.height / 5
         beginButton.setTitle("Begin", for: .normal)
-   
+        beginButton.backgroundColor = #colorLiteral(red: 0.0479086861, green: 0.1120770648, blue: 0.1909584403, alpha: 1)
     }
     
     
