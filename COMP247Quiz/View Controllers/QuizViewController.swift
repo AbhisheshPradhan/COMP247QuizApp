@@ -12,6 +12,7 @@ class QuizViewController: UIViewController
 {
     
     var topic: Topic?
+    var topicName: String = ""
     var userAns:Int = 0
     var answered:Bool = false
     var currentQuestion:Int = 0
@@ -51,7 +52,7 @@ class QuizViewController: UIViewController
         
         currentQuestion += 1
         setOptionColor(sender)
-
+        
         timer.invalidate()
         disableButtons()
         nextQuestion()
@@ -120,14 +121,14 @@ class QuizViewController: UIViewController
     
     private func setupUI(){
         view.setGradientBackground(colorOne: Colors.gradientColor1, colorTwo: Colors.gradientColor2)
-        //  navigationItem.title
+        navigationItem.title = topicName
         
         for buttons in optionButtons{
             buttons.layer.cornerRadius = buttons.frame.size.height / 5
             buttons.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             buttons.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
             //  questionLabel.layer.cornerRadius = questionLabel.frame.height / 5
-         
+            
         }
     }
     
