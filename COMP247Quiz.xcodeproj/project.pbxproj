@@ -11,6 +11,8 @@
 		722064EE2074D2C100C32AFE /* questionBank.json in Resources */ = {isa = PBXBuildFile; fileRef = 722064ED2074D2C100C32AFE /* questionBank.json */; };
 		722064F02074EED900C32AFE /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722064EF2074EED900C32AFE /* QuizViewController.swift */; };
 		722064F920751FF000C32AFE /* ChooseTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722064F820751FF000C32AFE /* ChooseTopicsViewController.swift */; };
+		727EC3FD207B3E5A00F1A323 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727EC3FC207B3E5A00F1A323 /* ProgressViewController.swift */; };
+		727EC3FF207B7B2900F1A323 /* ProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727EC3FE207B7B2900F1A323 /* ProgressTableViewCell.swift */; };
 		72A55D33206FDAA000745AAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A55D32206FDAA000745AAA /* AppDelegate.swift */; };
 		72A55D35206FDAA000745AAA /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A55D34206FDAA000745AAA /* StartScreenViewController.swift */; };
 		72A55D38206FDAA000745AAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A55D36206FDAA000745AAA /* Main.storyboard */; };
@@ -19,6 +21,7 @@
 		72A55D45206FDC6400745AAA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A55D44206FDC6400745AAA /* Colors.swift */; };
 		72B608FF20762AAD00EF3ECB /* QuizSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B608FE20762AAD00EF3ECB /* QuizSummaryViewController.swift */; };
 		72C17E9A2077DCEC00E8E35A /* Planned UI.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C17E992077DCEB00E8E35A /* Planned UI.png */; };
+		72E88D50207A606B00532069 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E88D4F207A606B00532069 /* CustomTableViewCell.swift */; };
 		72E8FC66206FDCC60011D881 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E8FC65206FDCC60011D881 /* UIViewExtension.swift */; };
 		72EC0AF620753852004A3377 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC0AF520753852004A3377 /* Topic.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +31,8 @@
 		722064ED2074D2C100C32AFE /* questionBank.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questionBank.json; sourceTree = "<group>"; };
 		722064EF2074EED900C32AFE /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		722064F820751FF000C32AFE /* ChooseTopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTopicsViewController.swift; sourceTree = "<group>"; };
+		727EC3FC207B3E5A00F1A323 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		727EC3FE207B7B2900F1A323 /* ProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewCell.swift; sourceTree = "<group>"; };
 		72A55D2F206FDAA000745AAA /* COMP247Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COMP247Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A55D32206FDAA000745AAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72A55D34206FDAA000745AAA /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +43,7 @@
 		72A55D44206FDC6400745AAA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		72B608FE20762AAD00EF3ECB /* QuizSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSummaryViewController.swift; sourceTree = "<group>"; };
 		72C17E992077DCEB00E8E35A /* Planned UI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Planned UI.png"; sourceTree = "<group>"; };
+		72E88D4F207A606B00532069 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		72E8FC65206FDCC60011D881 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		72EC0AF520753852004A3377 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,8 +73,11 @@
 			children = (
 				72A55D34206FDAA000745AAA /* StartScreenViewController.swift */,
 				722064F820751FF000C32AFE /* ChooseTopicsViewController.swift */,
+				72E88D4F207A606B00532069 /* CustomTableViewCell.swift */,
 				722064EF2074EED900C32AFE /* QuizViewController.swift */,
 				72B608FE20762AAD00EF3ECB /* QuizSummaryViewController.swift */,
+				727EC3FC207B3E5A00F1A323 /* ProgressViewController.swift */,
+				727EC3FE207B7B2900F1A323 /* ProgressTableViewCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -207,10 +216,13 @@
 			files = (
 				72A55D35206FDAA000745AAA /* StartScreenViewController.swift in Sources */,
 				72A55D45206FDC6400745AAA /* Colors.swift in Sources */,
+				727EC3FF207B7B2900F1A323 /* ProgressTableViewCell.swift in Sources */,
 				722064F02074EED900C32AFE /* QuizViewController.swift in Sources */,
+				727EC3FD207B3E5A00F1A323 /* ProgressViewController.swift in Sources */,
 				72E8FC66206FDCC60011D881 /* UIViewExtension.swift in Sources */,
 				722064F920751FF000C32AFE /* ChooseTopicsViewController.swift in Sources */,
 				72EC0AF620753852004A3377 /* Topic.swift in Sources */,
+				72E88D50207A606B00532069 /* CustomTableViewCell.swift in Sources */,
 				722064E72074BA4E00C32AFE /* Question.swift in Sources */,
 				72A55D33206FDAA000745AAA /* AppDelegate.swift in Sources */,
 				72B608FF20762AAD00EF3ECB /* QuizSummaryViewController.swift in Sources */,

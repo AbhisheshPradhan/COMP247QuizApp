@@ -11,6 +11,9 @@ import Foundation
 struct Topic: Decodable
 {
     let topicName: String
+    let topicNumber: Int
+    let highScoreString: String?
     let questions: [Question]
+   // let highScore: Int?
  //   let topicList: [Topic]?
 }

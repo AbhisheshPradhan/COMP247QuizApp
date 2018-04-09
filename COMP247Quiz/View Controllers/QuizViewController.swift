@@ -8,11 +8,13 @@
 
 import UIKit
 
-class QuizViewController: UIViewController
-{
+class QuizViewController: UIViewController{
+    
+    //MARK : Variables
     
     var topic: Topic?
     var topicName: String = ""
+    var topicNumber: Int = 0
     var userAns:Int = 0
     var answered:Bool = false
     var currentQuestion:Int = 0
@@ -20,17 +22,27 @@ class QuizViewController: UIViewController
     let delay = 1.5
     var score:Int = 0
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
+        loadQuestion()
+    }
+    
     
     // MARK: OUTLETS
+    
     @IBOutlet weak var questionLabel: UILabel!{
         didSet{
-            questionLabel.layer.cornerRadius = questionLabel.frame.size.height / 5
+            questionLabel.layer.cornerRadius = questionLabel.frame.size.height / 20
             questionLabel.layer.masksToBounds = true
         }
     }
+    
     @IBOutlet var optionButtons: [UIButton]!
     
-    // MARK: ACTIONS (Buttons)
+    
+    // MARK: ACTIONS
+    
     @IBAction func choseAnswer(_ sender: UIButton) {
         
         answered = true
@@ -58,11 +70,16 @@ class QuizViewController: UIViewController
         nextQuestion()
     }
     
+    
+    // MARK : HELPER METHODS
+    
     func setOptionColor(_ sender: UIButton){
         if answered == true {
-            optionButtons[topic!.questions[currentQuestion-1].correctAns-1].backgroundColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
+            optionButtons[topic!.questions[currentQuestion-1].correctAns-1].backgroundColor = #colorLiteral(red: 0.4537969828, green: 0.7473406196, blue: 0.2674373388, alpha: 1)
+            optionButtons[topic!.questions[currentQuestion-1].correctAns-1].setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
             if userAns != topic!.questions[currentQuestion-1].correctAns{
-                sender.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
+                sender.backgroundColor = #colorLiteral(red: 0.9236522317, green: 0.2392916381, blue: 0.2136276364, alpha: 1)
+                sender.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
             }
         }
     }
@@ -74,10 +91,6 @@ class QuizViewController: UIViewController
         else {
             timer = Timer.scheduledTimer(timeInterval: delay, target: self, selector: #selector(loadQuestion), userInfo: nil, repeats: false)
         }
-    }
-    
-    func showCorrectAns(_ sender: UIButton){
-        sender.backgroundColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
     }
     
     func disableButtons(){
@@ -92,31 +105,21 @@ class QuizViewController: UIViewController
         }
     }
     
+    func resetOptionColor(){
+        for buttons in optionButtons{
+            buttons.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            buttons.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
+        }
+    }
+    
     @objc func loadQuestion(){
         resetOptionColor()
         answered = false
         questionLabel.text = topic!.questions[currentQuestion].question
         for option in 0..<optionButtons.count{
-            
             optionButtons[option].setTitle(topic?.questions[currentQuestion].options[option], for: .normal)
         }
         enableButtons()
-    }
-    
-    @objc func endQuiz(){
-        performSegue(withIdentifier: "showSummary", sender: self)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupUI()
-        loadQuestion()
-    }
-    
-    func resetOptionColor(){
-        for buttons in optionButtons{
-            buttons.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        }
     }
     
     private func setupUI(){
@@ -127,15 +130,21 @@ class QuizViewController: UIViewController
             buttons.layer.cornerRadius = buttons.frame.size.height / 5
             buttons.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             buttons.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
-            //  questionLabel.layer.cornerRadius = questionLabel.frame.height / 5
-            
         }
+    }
+    
+    
+    //MARK : SEGUES
+    
+    @objc func endQuiz(){
+        performSegue(withIdentifier: "showSummary", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? QuizSummaryViewController{
             destination.score = score
             destination.topic = topic
+            destination.topicNumber = topicNumber
         }
     }
 }
