@@ -1,5 +1,6 @@
 # COMP247QuizApp
-Personal Project. Quiz App for Data Communications Course at my University.
+Personal Project. 
+Quiz App for Data Communications Course at my University.
 
 Completed Tasks:
 
