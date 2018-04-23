@@ -18,3 +18,9 @@ TO-DO:
 - Auto Layout
 - Split View
 - Code review
+
+Thins I learned: 
+- Working with JSON data
+- Timers
+- Navigation Controller
+- TableView
