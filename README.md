@@ -19,7 +19,7 @@ TO-DO:
 - Split View
 - Code review
 
-Things I learned: 
+What I learned: 
 - Working with JSON data
 - Timers
 - Navigation Controller
